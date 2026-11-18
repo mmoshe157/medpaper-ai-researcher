@@ -1,0 +1,5140 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "medpaper-api"
+            }
+          },
+          {
+            "key": "deployment.environment",
+            "value": {
+              "stringValue": "production"
+            }
+          }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "spans": [
+            {
+              "traceId": "00000000000000000000000000000001",
+              "spanId": "0000000100000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794975081887181056",
+              "endTimeUnixNano": "1794975088087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000001",
+              "spanId": "0000000100000010",
+              "parentSpanId": "0000000100000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794975081887181056",
+              "endTimeUnixNano": "1794975082837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000001",
+              "spanId": "0000000100000020",
+              "parentSpanId": "0000000100000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794975082847181056",
+              "endTimeUnixNano": "1794975083007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000001",
+              "spanId": "0000000100000011",
+              "parentSpanId": "0000000100000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794975083087181056",
+              "endTimeUnixNano": "1794975084037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000001",
+              "spanId": "0000000100000021",
+              "parentSpanId": "0000000100000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794975084047181056",
+              "endTimeUnixNano": "1794975084207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000002",
+              "spanId": "0000000200000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794975261887181056",
+              "endTimeUnixNano": "1794975263987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000002",
+              "spanId": "0000000200000031",
+              "parentSpanId": "0000000200000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794975261907181056",
+              "endTimeUnixNano": "1794975262127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000002",
+              "spanId": "0000000200000032",
+              "parentSpanId": "0000000200000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794975262137181056",
+              "endTimeUnixNano": "1794975263937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000003",
+              "spanId": "0000000300000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794975441887181056",
+              "endTimeUnixNano": "1794975448087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000003",
+              "spanId": "0000000300000010",
+              "parentSpanId": "0000000300000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794975441887181056",
+              "endTimeUnixNano": "1794975442837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000003",
+              "spanId": "0000000300000020",
+              "parentSpanId": "0000000300000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794975442847181056",
+              "endTimeUnixNano": "1794975443007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000003",
+              "spanId": "0000000300000011",
+              "parentSpanId": "0000000300000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794975443087181056",
+              "endTimeUnixNano": "1794975444037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000003",
+              "spanId": "0000000300000021",
+              "parentSpanId": "0000000300000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794975444047181056",
+              "endTimeUnixNano": "1794975444207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000004",
+              "spanId": "0000000400000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794975621887181056",
+              "endTimeUnixNano": "1794975623987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000004",
+              "spanId": "0000000400000031",
+              "parentSpanId": "0000000400000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794975621907181056",
+              "endTimeUnixNano": "1794975622127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000004",
+              "spanId": "0000000400000032",
+              "parentSpanId": "0000000400000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794975622137181056",
+              "endTimeUnixNano": "1794975623937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000005",
+              "spanId": "0000000500000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794975801887181056",
+              "endTimeUnixNano": "1794975808087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000005",
+              "spanId": "0000000500000010",
+              "parentSpanId": "0000000500000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794975801887181056",
+              "endTimeUnixNano": "1794975802837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000005",
+              "spanId": "0000000500000020",
+              "parentSpanId": "0000000500000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794975802847181056",
+              "endTimeUnixNano": "1794975803007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000005",
+              "spanId": "0000000500000011",
+              "parentSpanId": "0000000500000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794975803087181056",
+              "endTimeUnixNano": "1794975804037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000005",
+              "spanId": "0000000500000021",
+              "parentSpanId": "0000000500000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794975804047181056",
+              "endTimeUnixNano": "1794975804207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000006",
+              "spanId": "0000000600000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794975981887181056",
+              "endTimeUnixNano": "1794975983987181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000006",
+              "spanId": "0000000600000031",
+              "parentSpanId": "0000000600000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794975981907181056",
+              "endTimeUnixNano": "1794975982127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000006",
+              "spanId": "0000000600000032",
+              "parentSpanId": "0000000600000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794975982137181056",
+              "endTimeUnixNano": "1794975983937181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000007",
+              "spanId": "0000000700000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794976161887181056",
+              "endTimeUnixNano": "1794976168087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000007",
+              "spanId": "0000000700000010",
+              "parentSpanId": "0000000700000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794976161887181056",
+              "endTimeUnixNano": "1794976162837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000007",
+              "spanId": "0000000700000020",
+              "parentSpanId": "0000000700000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794976162847181056",
+              "endTimeUnixNano": "1794976163007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000007",
+              "spanId": "0000000700000011",
+              "parentSpanId": "0000000700000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794976163087181056",
+              "endTimeUnixNano": "1794976164037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000007",
+              "spanId": "0000000700000021",
+              "parentSpanId": "0000000700000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794976164047181056",
+              "endTimeUnixNano": "1794976164207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000008",
+              "spanId": "0000000800000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794976341887181056",
+              "endTimeUnixNano": "1794976343987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000008",
+              "spanId": "0000000800000031",
+              "parentSpanId": "0000000800000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794976341907181056",
+              "endTimeUnixNano": "1794976342127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000008",
+              "spanId": "0000000800000032",
+              "parentSpanId": "0000000800000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794976342137181056",
+              "endTimeUnixNano": "1794976343937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000009",
+              "spanId": "0000000900000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794976521887181056",
+              "endTimeUnixNano": "1794976528087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000009",
+              "spanId": "0000000900000010",
+              "parentSpanId": "0000000900000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794976521887181056",
+              "endTimeUnixNano": "1794976522837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000009",
+              "spanId": "0000000900000020",
+              "parentSpanId": "0000000900000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794976522847181056",
+              "endTimeUnixNano": "1794976523007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000009",
+              "spanId": "0000000900000011",
+              "parentSpanId": "0000000900000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794976523087181056",
+              "endTimeUnixNano": "1794976524037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000009",
+              "spanId": "0000000900000021",
+              "parentSpanId": "0000000900000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794976524047181056",
+              "endTimeUnixNano": "1794976524207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000a",
+              "spanId": "0000000a00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794976701887181056",
+              "endTimeUnixNano": "1794976703987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000a",
+              "spanId": "0000000a00000031",
+              "parentSpanId": "0000000a00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794976701907181056",
+              "endTimeUnixNano": "1794976702127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000a",
+              "spanId": "0000000a00000032",
+              "parentSpanId": "0000000a00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794976702137181056",
+              "endTimeUnixNano": "1794976703937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000b",
+              "spanId": "0000000b00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794976881887181056",
+              "endTimeUnixNano": "1794976888087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000b",
+              "spanId": "0000000b00000010",
+              "parentSpanId": "0000000b00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794976881887181056",
+              "endTimeUnixNano": "1794976882837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000b",
+              "spanId": "0000000b00000020",
+              "parentSpanId": "0000000b00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794976882847181056",
+              "endTimeUnixNano": "1794976883007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000b",
+              "spanId": "0000000b00000011",
+              "parentSpanId": "0000000b00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794976883087181056",
+              "endTimeUnixNano": "1794976884037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000b",
+              "spanId": "0000000b00000021",
+              "parentSpanId": "0000000b00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794976884047181056",
+              "endTimeUnixNano": "1794976884207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000c",
+              "spanId": "0000000c00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794977061887181056",
+              "endTimeUnixNano": "1794977063987181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000c",
+              "spanId": "0000000c00000031",
+              "parentSpanId": "0000000c00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794977061907181056",
+              "endTimeUnixNano": "1794977062127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000c",
+              "spanId": "0000000c00000032",
+              "parentSpanId": "0000000c00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794977062137181056",
+              "endTimeUnixNano": "1794977063937181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000d",
+              "spanId": "0000000d00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794977241887181056",
+              "endTimeUnixNano": "1794977248087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000d",
+              "spanId": "0000000d00000010",
+              "parentSpanId": "0000000d00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794977241887181056",
+              "endTimeUnixNano": "1794977242837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000d",
+              "spanId": "0000000d00000020",
+              "parentSpanId": "0000000d00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794977242847181056",
+              "endTimeUnixNano": "1794977243007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000d",
+              "spanId": "0000000d00000011",
+              "parentSpanId": "0000000d00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794977243087181056",
+              "endTimeUnixNano": "1794977244037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000d",
+              "spanId": "0000000d00000021",
+              "parentSpanId": "0000000d00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794977244047181056",
+              "endTimeUnixNano": "1794977244207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000e",
+              "spanId": "0000000e00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794977421887181056",
+              "endTimeUnixNano": "1794977423987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000e",
+              "spanId": "0000000e00000031",
+              "parentSpanId": "0000000e00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794977421907181056",
+              "endTimeUnixNano": "1794977422127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000e",
+              "spanId": "0000000e00000032",
+              "parentSpanId": "0000000e00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794977422137181056",
+              "endTimeUnixNano": "1794977423937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000f",
+              "spanId": "0000000f00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794977601887181056",
+              "endTimeUnixNano": "1794977608087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000f",
+              "spanId": "0000000f00000010",
+              "parentSpanId": "0000000f00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794977601887181056",
+              "endTimeUnixNano": "1794977602837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000f",
+              "spanId": "0000000f00000020",
+              "parentSpanId": "0000000f00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794977602847181056",
+              "endTimeUnixNano": "1794977603007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000f",
+              "spanId": "0000000f00000011",
+              "parentSpanId": "0000000f00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794977603087181056",
+              "endTimeUnixNano": "1794977604037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000000f",
+              "spanId": "0000000f00000021",
+              "parentSpanId": "0000000f00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794977604047181056",
+              "endTimeUnixNano": "1794977604207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000010",
+              "spanId": "0000001000000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794977781887181056",
+              "endTimeUnixNano": "1794977783987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000010",
+              "spanId": "0000001000000031",
+              "parentSpanId": "0000001000000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794977781907181056",
+              "endTimeUnixNano": "1794977782127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000010",
+              "spanId": "0000001000000032",
+              "parentSpanId": "0000001000000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794977782137181056",
+              "endTimeUnixNano": "1794977783937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000011",
+              "spanId": "0000001100000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794977961887181056",
+              "endTimeUnixNano": "1794977968087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000011",
+              "spanId": "0000001100000010",
+              "parentSpanId": "0000001100000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794977961887181056",
+              "endTimeUnixNano": "1794977962837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000011",
+              "spanId": "0000001100000020",
+              "parentSpanId": "0000001100000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794977962847181056",
+              "endTimeUnixNano": "1794977963007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000011",
+              "spanId": "0000001100000011",
+              "parentSpanId": "0000001100000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794977963087181056",
+              "endTimeUnixNano": "1794977964037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000011",
+              "spanId": "0000001100000021",
+              "parentSpanId": "0000001100000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794977964047181056",
+              "endTimeUnixNano": "1794977964207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000012",
+              "spanId": "0000001200000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794978141887181056",
+              "endTimeUnixNano": "1794978143987181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000012",
+              "spanId": "0000001200000031",
+              "parentSpanId": "0000001200000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794978141907181056",
+              "endTimeUnixNano": "1794978142127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000012",
+              "spanId": "0000001200000032",
+              "parentSpanId": "0000001200000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794978142137181056",
+              "endTimeUnixNano": "1794978143937181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000013",
+              "spanId": "0000001300000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794978321887181056",
+              "endTimeUnixNano": "1794978328087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000013",
+              "spanId": "0000001300000010",
+              "parentSpanId": "0000001300000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794978321887181056",
+              "endTimeUnixNano": "1794978322837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000013",
+              "spanId": "0000001300000020",
+              "parentSpanId": "0000001300000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794978322847181056",
+              "endTimeUnixNano": "1794978323007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000013",
+              "spanId": "0000001300000011",
+              "parentSpanId": "0000001300000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794978323087181056",
+              "endTimeUnixNano": "1794978324037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000013",
+              "spanId": "0000001300000021",
+              "parentSpanId": "0000001300000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794978324047181056",
+              "endTimeUnixNano": "1794978324207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000014",
+              "spanId": "0000001400000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794978501887181056",
+              "endTimeUnixNano": "1794978503987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000014",
+              "spanId": "0000001400000031",
+              "parentSpanId": "0000001400000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794978501907181056",
+              "endTimeUnixNano": "1794978502127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000014",
+              "spanId": "0000001400000032",
+              "parentSpanId": "0000001400000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794978502137181056",
+              "endTimeUnixNano": "1794978503937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000015",
+              "spanId": "0000001500000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794978681887181056",
+              "endTimeUnixNano": "1794978688087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000015",
+              "spanId": "0000001500000010",
+              "parentSpanId": "0000001500000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794978681887181056",
+              "endTimeUnixNano": "1794978682837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000015",
+              "spanId": "0000001500000020",
+              "parentSpanId": "0000001500000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794978682847181056",
+              "endTimeUnixNano": "1794978683007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000015",
+              "spanId": "0000001500000011",
+              "parentSpanId": "0000001500000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794978683087181056",
+              "endTimeUnixNano": "1794978684037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000015",
+              "spanId": "0000001500000021",
+              "parentSpanId": "0000001500000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794978684047181056",
+              "endTimeUnixNano": "1794978684207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000016",
+              "spanId": "0000001600000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794978861887181056",
+              "endTimeUnixNano": "1794978863987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000016",
+              "spanId": "0000001600000031",
+              "parentSpanId": "0000001600000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794978861907181056",
+              "endTimeUnixNano": "1794978862127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000016",
+              "spanId": "0000001600000032",
+              "parentSpanId": "0000001600000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794978862137181056",
+              "endTimeUnixNano": "1794978863937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000017",
+              "spanId": "0000001700000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794979041887181056",
+              "endTimeUnixNano": "1794979048087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000017",
+              "spanId": "0000001700000010",
+              "parentSpanId": "0000001700000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794979041887181056",
+              "endTimeUnixNano": "1794979042837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000017",
+              "spanId": "0000001700000020",
+              "parentSpanId": "0000001700000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794979042847181056",
+              "endTimeUnixNano": "1794979043007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000017",
+              "spanId": "0000001700000011",
+              "parentSpanId": "0000001700000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794979043087181056",
+              "endTimeUnixNano": "1794979044037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000017",
+              "spanId": "0000001700000021",
+              "parentSpanId": "0000001700000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794979044047181056",
+              "endTimeUnixNano": "1794979044207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000018",
+              "spanId": "0000001800000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794979221887181056",
+              "endTimeUnixNano": "1794979223987181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000018",
+              "spanId": "0000001800000031",
+              "parentSpanId": "0000001800000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794979221907181056",
+              "endTimeUnixNano": "1794979222127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000018",
+              "spanId": "0000001800000032",
+              "parentSpanId": "0000001800000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794979222137181056",
+              "endTimeUnixNano": "1794979223937181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000019",
+              "spanId": "0000001900000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794979401887181056",
+              "endTimeUnixNano": "1794979408087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000019",
+              "spanId": "0000001900000010",
+              "parentSpanId": "0000001900000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794979401887181056",
+              "endTimeUnixNano": "1794979402837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000019",
+              "spanId": "0000001900000020",
+              "parentSpanId": "0000001900000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794979402847181056",
+              "endTimeUnixNano": "1794979403007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000019",
+              "spanId": "0000001900000011",
+              "parentSpanId": "0000001900000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794979403087181056",
+              "endTimeUnixNano": "1794979404037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000019",
+              "spanId": "0000001900000021",
+              "parentSpanId": "0000001900000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794979404047181056",
+              "endTimeUnixNano": "1794979404207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001a",
+              "spanId": "0000001a00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794979581887181056",
+              "endTimeUnixNano": "1794979583987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001a",
+              "spanId": "0000001a00000031",
+              "parentSpanId": "0000001a00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794979581907181056",
+              "endTimeUnixNano": "1794979582127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001a",
+              "spanId": "0000001a00000032",
+              "parentSpanId": "0000001a00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794979582137181056",
+              "endTimeUnixNano": "1794979583937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001b",
+              "spanId": "0000001b00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794979761887181056",
+              "endTimeUnixNano": "1794979768087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001b",
+              "spanId": "0000001b00000010",
+              "parentSpanId": "0000001b00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794979761887181056",
+              "endTimeUnixNano": "1794979762837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001b",
+              "spanId": "0000001b00000020",
+              "parentSpanId": "0000001b00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794979762847181056",
+              "endTimeUnixNano": "1794979763007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001b",
+              "spanId": "0000001b00000011",
+              "parentSpanId": "0000001b00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794979763087181056",
+              "endTimeUnixNano": "1794979764037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001b",
+              "spanId": "0000001b00000021",
+              "parentSpanId": "0000001b00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794979764047181056",
+              "endTimeUnixNano": "1794979764207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001c",
+              "spanId": "0000001c00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794979941887181056",
+              "endTimeUnixNano": "1794979943987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001c",
+              "spanId": "0000001c00000031",
+              "parentSpanId": "0000001c00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794979941907181056",
+              "endTimeUnixNano": "1794979942127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001c",
+              "spanId": "0000001c00000032",
+              "parentSpanId": "0000001c00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794979942137181056",
+              "endTimeUnixNano": "1794979943937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001d",
+              "spanId": "0000001d00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794980121887181056",
+              "endTimeUnixNano": "1794980128087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001d",
+              "spanId": "0000001d00000010",
+              "parentSpanId": "0000001d00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794980121887181056",
+              "endTimeUnixNano": "1794980122837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001d",
+              "spanId": "0000001d00000020",
+              "parentSpanId": "0000001d00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794980122847181056",
+              "endTimeUnixNano": "1794980123007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001d",
+              "spanId": "0000001d00000011",
+              "parentSpanId": "0000001d00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794980123087181056",
+              "endTimeUnixNano": "1794980124037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001d",
+              "spanId": "0000001d00000021",
+              "parentSpanId": "0000001d00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794980124047181056",
+              "endTimeUnixNano": "1794980124207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001e",
+              "spanId": "0000001e00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794980301887181056",
+              "endTimeUnixNano": "1794980303987181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001e",
+              "spanId": "0000001e00000031",
+              "parentSpanId": "0000001e00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794980301907181056",
+              "endTimeUnixNano": "1794980302127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001e",
+              "spanId": "0000001e00000032",
+              "parentSpanId": "0000001e00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794980302137181056",
+              "endTimeUnixNano": "1794980303937181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001f",
+              "spanId": "0000001f00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794980481887181056",
+              "endTimeUnixNano": "1794980488087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001f",
+              "spanId": "0000001f00000010",
+              "parentSpanId": "0000001f00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794980481887181056",
+              "endTimeUnixNano": "1794980482837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001f",
+              "spanId": "0000001f00000020",
+              "parentSpanId": "0000001f00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794980482847181056",
+              "endTimeUnixNano": "1794980483007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001f",
+              "spanId": "0000001f00000011",
+              "parentSpanId": "0000001f00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794980483087181056",
+              "endTimeUnixNano": "1794980484037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000001f",
+              "spanId": "0000001f00000021",
+              "parentSpanId": "0000001f00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794980484047181056",
+              "endTimeUnixNano": "1794980484207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000020",
+              "spanId": "0000002000000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794980661887181056",
+              "endTimeUnixNano": "1794980663987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000020",
+              "spanId": "0000002000000031",
+              "parentSpanId": "0000002000000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794980661907181056",
+              "endTimeUnixNano": "1794980662127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000020",
+              "spanId": "0000002000000032",
+              "parentSpanId": "0000002000000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794980662137181056",
+              "endTimeUnixNano": "1794980663937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000021",
+              "spanId": "0000002100000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794980841887181056",
+              "endTimeUnixNano": "1794980848087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000021",
+              "spanId": "0000002100000010",
+              "parentSpanId": "0000002100000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794980841887181056",
+              "endTimeUnixNano": "1794980842837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000021",
+              "spanId": "0000002100000020",
+              "parentSpanId": "0000002100000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794980842847181056",
+              "endTimeUnixNano": "1794980843007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000021",
+              "spanId": "0000002100000011",
+              "parentSpanId": "0000002100000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794980843087181056",
+              "endTimeUnixNano": "1794980844037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000021",
+              "spanId": "0000002100000021",
+              "parentSpanId": "0000002100000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794980844047181056",
+              "endTimeUnixNano": "1794980844207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000022",
+              "spanId": "0000002200000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794981021887181056",
+              "endTimeUnixNano": "1794981023987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000022",
+              "spanId": "0000002200000031",
+              "parentSpanId": "0000002200000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794981021907181056",
+              "endTimeUnixNano": "1794981022127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000022",
+              "spanId": "0000002200000032",
+              "parentSpanId": "0000002200000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794981022137181056",
+              "endTimeUnixNano": "1794981023937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000023",
+              "spanId": "0000002300000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794981201887181056",
+              "endTimeUnixNano": "1794981208087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000023",
+              "spanId": "0000002300000010",
+              "parentSpanId": "0000002300000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794981201887181056",
+              "endTimeUnixNano": "1794981202837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000023",
+              "spanId": "0000002300000020",
+              "parentSpanId": "0000002300000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794981202847181056",
+              "endTimeUnixNano": "1794981203007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000023",
+              "spanId": "0000002300000011",
+              "parentSpanId": "0000002300000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794981203087181056",
+              "endTimeUnixNano": "1794981204037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000023",
+              "spanId": "0000002300000021",
+              "parentSpanId": "0000002300000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794981204047181056",
+              "endTimeUnixNano": "1794981204207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000024",
+              "spanId": "0000002400000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794981381887181056",
+              "endTimeUnixNano": "1794981383987181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000024",
+              "spanId": "0000002400000031",
+              "parentSpanId": "0000002400000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794981381907181056",
+              "endTimeUnixNano": "1794981382127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000024",
+              "spanId": "0000002400000032",
+              "parentSpanId": "0000002400000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794981382137181056",
+              "endTimeUnixNano": "1794981383937181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000025",
+              "spanId": "0000002500000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794981561887181056",
+              "endTimeUnixNano": "1794981568087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000025",
+              "spanId": "0000002500000010",
+              "parentSpanId": "0000002500000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794981561887181056",
+              "endTimeUnixNano": "1794981562837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000025",
+              "spanId": "0000002500000020",
+              "parentSpanId": "0000002500000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794981562847181056",
+              "endTimeUnixNano": "1794981563007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000025",
+              "spanId": "0000002500000011",
+              "parentSpanId": "0000002500000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794981563087181056",
+              "endTimeUnixNano": "1794981564037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000025",
+              "spanId": "0000002500000021",
+              "parentSpanId": "0000002500000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794981564047181056",
+              "endTimeUnixNano": "1794981564207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000026",
+              "spanId": "0000002600000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794981741887181056",
+              "endTimeUnixNano": "1794981743987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000026",
+              "spanId": "0000002600000031",
+              "parentSpanId": "0000002600000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794981741907181056",
+              "endTimeUnixNano": "1794981742127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000026",
+              "spanId": "0000002600000032",
+              "parentSpanId": "0000002600000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794981742137181056",
+              "endTimeUnixNano": "1794981743937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000027",
+              "spanId": "0000002700000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794981921887181056",
+              "endTimeUnixNano": "1794981928087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000027",
+              "spanId": "0000002700000010",
+              "parentSpanId": "0000002700000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794981921887181056",
+              "endTimeUnixNano": "1794981922837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000027",
+              "spanId": "0000002700000020",
+              "parentSpanId": "0000002700000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794981922847181056",
+              "endTimeUnixNano": "1794981923007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000027",
+              "spanId": "0000002700000011",
+              "parentSpanId": "0000002700000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794981923087181056",
+              "endTimeUnixNano": "1794981924037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000027",
+              "spanId": "0000002700000021",
+              "parentSpanId": "0000002700000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794981924047181056",
+              "endTimeUnixNano": "1794981924207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000028",
+              "spanId": "0000002800000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794982101887181056",
+              "endTimeUnixNano": "1794982103987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000028",
+              "spanId": "0000002800000031",
+              "parentSpanId": "0000002800000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794982101907181056",
+              "endTimeUnixNano": "1794982102127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000028",
+              "spanId": "0000002800000032",
+              "parentSpanId": "0000002800000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794982102137181056",
+              "endTimeUnixNano": "1794982103937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000029",
+              "spanId": "0000002900000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794982281887181056",
+              "endTimeUnixNano": "1794982288087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000029",
+              "spanId": "0000002900000010",
+              "parentSpanId": "0000002900000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794982281887181056",
+              "endTimeUnixNano": "1794982282837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000029",
+              "spanId": "0000002900000020",
+              "parentSpanId": "0000002900000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794982282847181056",
+              "endTimeUnixNano": "1794982283007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000029",
+              "spanId": "0000002900000011",
+              "parentSpanId": "0000002900000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794982283087181056",
+              "endTimeUnixNano": "1794982284037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000029",
+              "spanId": "0000002900000021",
+              "parentSpanId": "0000002900000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794982284047181056",
+              "endTimeUnixNano": "1794982284207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002a",
+              "spanId": "0000002a00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794982461887181056",
+              "endTimeUnixNano": "1794982463987181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002a",
+              "spanId": "0000002a00000031",
+              "parentSpanId": "0000002a00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794982461907181056",
+              "endTimeUnixNano": "1794982462127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002a",
+              "spanId": "0000002a00000032",
+              "parentSpanId": "0000002a00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794982462137181056",
+              "endTimeUnixNano": "1794982463937181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002b",
+              "spanId": "0000002b00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794982641887181056",
+              "endTimeUnixNano": "1794982648087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002b",
+              "spanId": "0000002b00000010",
+              "parentSpanId": "0000002b00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794982641887181056",
+              "endTimeUnixNano": "1794982642837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002b",
+              "spanId": "0000002b00000020",
+              "parentSpanId": "0000002b00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794982642847181056",
+              "endTimeUnixNano": "1794982643007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002b",
+              "spanId": "0000002b00000011",
+              "parentSpanId": "0000002b00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794982643087181056",
+              "endTimeUnixNano": "1794982644037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002b",
+              "spanId": "0000002b00000021",
+              "parentSpanId": "0000002b00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794982644047181056",
+              "endTimeUnixNano": "1794982644207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002c",
+              "spanId": "0000002c00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794982821887181056",
+              "endTimeUnixNano": "1794982823987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002c",
+              "spanId": "0000002c00000031",
+              "parentSpanId": "0000002c00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794982821907181056",
+              "endTimeUnixNano": "1794982822127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002c",
+              "spanId": "0000002c00000032",
+              "parentSpanId": "0000002c00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794982822137181056",
+              "endTimeUnixNano": "1794982823937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002d",
+              "spanId": "0000002d00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794983001887181056",
+              "endTimeUnixNano": "1794983008087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002d",
+              "spanId": "0000002d00000010",
+              "parentSpanId": "0000002d00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794983001887181056",
+              "endTimeUnixNano": "1794983002837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002d",
+              "spanId": "0000002d00000020",
+              "parentSpanId": "0000002d00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794983002847181056",
+              "endTimeUnixNano": "1794983003007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002d",
+              "spanId": "0000002d00000011",
+              "parentSpanId": "0000002d00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794983003087181056",
+              "endTimeUnixNano": "1794983004037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002d",
+              "spanId": "0000002d00000021",
+              "parentSpanId": "0000002d00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794983004047181056",
+              "endTimeUnixNano": "1794983004207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002e",
+              "spanId": "0000002e00000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794983181887181056",
+              "endTimeUnixNano": "1794983183987181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002e",
+              "spanId": "0000002e00000031",
+              "parentSpanId": "0000002e00000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794983181907181056",
+              "endTimeUnixNano": "1794983182127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002e",
+              "spanId": "0000002e00000032",
+              "parentSpanId": "0000002e00000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794983182137181056",
+              "endTimeUnixNano": "1794983183937181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002f",
+              "spanId": "0000002f00000001",
+              "name": "invoke_agent literature-investigator",
+              "startTimeUnixNano": "1794983361887181056",
+              "endTimeUnixNano": "1794983368087181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "invoke_agent"
+                  }
+                },
+                {
+                  "key": "gen_ai.agent.name",
+                  "value": {
+                    "stringValue": "literature-investigator"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002f",
+              "spanId": "0000002f00000010",
+              "parentSpanId": "0000002f00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794983361887181056",
+              "endTimeUnixNano": "1794983362837181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4200"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002f",
+              "spanId": "0000002f00000020",
+              "parentSpanId": "0000002f00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794983362847181056",
+              "endTimeUnixNano": "1794983363007181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002f",
+              "spanId": "0000002f00000011",
+              "parentSpanId": "0000002f00000001",
+              "name": "messages claude-opus-4-1",
+              "startTimeUnixNano": "1794983363087181056",
+              "endTimeUnixNano": "1794983364037181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-opus-4-1"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "5800"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "240"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "0000000000000000000000000000002f",
+              "spanId": "0000002f00000021",
+              "parentSpanId": "0000002f00000001",
+              "name": "execute_tool search_pubmed",
+              "startTimeUnixNano": "1794983364047181056",
+              "endTimeUnixNano": "1794983364207181056",
+              "status": {
+                "code": 1
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "search_pubmed"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000030",
+              "spanId": "0000003000000001",
+              "name": "rag.citation_qa",
+              "startTimeUnixNano": "1794983541887181056",
+              "endTimeUnixNano": "1794983543987181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chain"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000030",
+              "spanId": "0000003000000031",
+              "parentSpanId": "0000003000000001",
+              "name": "retrieve pubmed_vectors",
+              "startTimeUnixNano": "1794983541907181056",
+              "endTimeUnixNano": "1794983542127181056",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "retrieval"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "00000000000000000000000000000030",
+              "spanId": "0000003000000032",
+              "parentSpanId": "0000003000000001",
+              "name": "chat gpt-5",
+              "startTimeUnixNano": "1794983542137181056",
+              "endTimeUnixNano": "1794983543937181056",
+              "status": {
+                "code": 2
+              },
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "gpt-5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "4100"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "360"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

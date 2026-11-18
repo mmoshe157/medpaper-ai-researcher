@@ -1,4 +1,4 @@
-"""Multi-step biomedical literature agent (deliberately unbudgeted loop + bloated tool schemas)."""
+"""Multi-step biomedical literature agent (deliberately unbudgeted loop + 22 bloated tool schemas)."""
 
 from __future__ import annotations
 
@@ -8,11 +8,11 @@ from anthropic import Anthropic
 client = Anthropic(max_retries=5)
 AGENT_MODEL = os.getenv("LIT_AGENT_MODEL", "claude-opus-4-1")
 
-# 16 tool schemas offered on every turn; only search_pubmed and fetch_trial are used in practice
+# 22 tool schemas offered on every turn; only search_pubmed and fetch_trial are used in practice
 TOOLS = [
     {"name": "search_pubmed", "description": "Search PubMed abstracts by MeSH query.", "input_schema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
     {"name": "fetch_trial", "description": "Fetch ClinicalTrials.gov NCT record.", "input_schema": {"type": "object", "properties": {"nct_id": {"type": "string"}}, "required": ["nct_id"]}},
-    *[{"name": f"legacy_registry_{i}", "description": f"Deprecated regional medical archive connector #{i} with extended metadata schema and pagination filters.", "input_schema": {"type": "object", "properties": {"id": {"type": "string"}, "region": {"type": "string"}}}} for i in range(1, 15)],
+    *[{"name": f"legacy_registry_{i}", "description": f"Deprecated regional medical archive connector #{i} with extended metadata schema and pagination filters.", "input_schema": {"type": "object", "properties": {"id": {"type": "string"}, "region": {"type": "string"}}}} for i in range(1, 21)],
 ]
 
 
