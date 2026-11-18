@@ -1,0 +1,3 @@
+Extract clinical trial metadata strictly from the abstract.
+Fields: condition, phase, sample_size, primary_endpoint, adverse_events.
+Never guess missing numbers; return null when absent.
